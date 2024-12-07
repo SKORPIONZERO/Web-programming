@@ -4,3 +4,39 @@ h1 {
     padding: 10px;
     margin: 50px;
 }
+.Default:link{
+    color:green;
+    background-color: transparent;
+    text-decoration: none;
+}
+.Default:visited{
+    color:pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+.Default:hover{
+    color:red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.Default:active{
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.Button_link:link, .Button_link:visited{
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.Button_link:hover, .Button_link:active {
+    background-color: red;
+}
+.Gojo{
+    width: 200px;
+    height: 250px;
+    float: left;
+}
