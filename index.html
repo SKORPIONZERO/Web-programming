@@ -5,9 +5,10 @@
         <meta charset="utf-8">
         <title>Главная страница</title>
         <link rel="Icon" type="image/x-icon" href="images/favicon.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body style="background-color: rgb(200, 156, 66);">
-        <h1 style="font-family: Franklin Gothic Medium;">Заголовок и что-то <br> ещё</h1>
+        <h1 style="font-family: Franklin Gothic Medium; font-size: 5vw;">Заголовок и что-то <br> ещё</h1>
         <a class="Button_link" href="#C2">Down</a>
         <a class="Button_link" href="https://store.steampowered.com/" target="_blank">Steam</a>
         <p style="color: rebeccapurple;" title="Read">Параграф 1</p>
@@ -24,7 +25,7 @@
             ignores it.
         </p>
         <a class="Default" href="https://www.w3schools.com" target="_blank">Ссылка</a>
-        <p><img class="Gojo" src="images/gojo_wallpaper_by_boujiee_deb1nct.jpg" alt="Gojo satoru" usemap="#Gojomap">IJUHNIUHNJUYGBHYGVBHGV BGV </p>
+        <p><img class="Gojo" src="images/gojo_wallpaper_by_boujiee_deb1nct.jpg" alt="Gojo satoru" usemap="#Gojomap" style="max-width: 100%; height: auto;">IJUHNIUHNJUYGBHYGVBHGV BGV </p>
         <hr>
         <pre style="text-align: end;">
             My Bonnie lies over the ocean.
@@ -196,8 +197,26 @@
         <span class="main Default">KDSKDAGNSDPSODFN</span>
         <div id="Dobro" class="main">FJUDWMWDS</div>
         <hr>
-        <iframe src="index.html" title="Takoyzhe"  name="press_f"></iframe>
+        <iframe src="index.html" title="Takoyzhe"  name="press_f" style="max-width: 100%; height: auto;"></iframe>
         <a href="https://dead-god.ru" target="press_f">Nu nado zaity</a>
+        <p id="demo"></p>
+        <script>
+          document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        </script>
+        <noscript>
+          Sorryan
+        </noscript>
+        <pre>
+        <code>
+          x = 4;
+          y = 3;
+          z = y+x;
+        </code>
+        </pre>
+        <p>Save document by pressing <kbd>Ctrl + S</kbd></p>
+        <p>Message from my computer:</p>
+        <p><samp>File not found.<br>Press F1 to continue</samp></p>
+        <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
     </body>
 </html>
 
@@ -214,4 +233,59 @@ JPEG	        Joint Photographic Expert Group image	    .jpg, .jpeg, .jfif, .pjpe
 PNG	            Portable Network Graphics	                .png
 SVG	            Scalable Vector Graphics	                .svg
 
-A favicon is a small image, so it should be a simple image with high contrast.-->
+<img src="picture.jpg">	The "picture.jpg" file is located in the same folder as the current page
+<img src="images/picture.jpg">	The "picture.jpg" file is located in the images folder in the current folder
+<img src="/images/picture.jpg">	The "picture.jpg" file is located in the images folder at the root of the current web
+<img src="../picture.jpg">	The "picture.jpg" file is located in the folder one level up from the current folder
+
+An absolute file path is the full URL to a file:
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+A favicon is a small image, so it should be a simple image with high contrast.
+Define the character set used:
+
+<meta charset="UTF-8">
+Define keywords for search engines:
+
+<meta name="keywords" content="HTML, CSS, JavaScript">
+Define a description of your web page:
+
+<meta name="description" content="Free Web tutorials">
+Define the author of a page:
+
+<meta name="author" content="John Doe">
+Refresh document every 30 seconds:
+
+<meta http-equiv="refresh" content="30">
+Setting the viewport to make your website look good on all devices:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+The <base> element specifies the base URL and/or target for all relative URLs in a page.
+
+The <base> tag must have either an href or a target attribute present, or both.
+
+There can only be one single <base> element in a document!
+<header> - Defines a header for a document or a section
+<nav> - Defines a set of navigation links
+<section> - Defines a section in a document
+<article> - Defines an independent, self-contained content
+<aside> - Defines content aside from the content (like a sidebar)
+<footer> - Defines a footer for a document or a section
+<details> - Defines additional details that the user can open and close on demand
+<summary> - Defines a heading for the <details> element
+
+There are four different techniques to create multicolumn layouts. Each technique has its pros and cons:
+
+CSS framework
+CSS float property
+CSS flexbox
+CSS grid
+
+Responsive Web Design is about using HTML and CSS to automatically
+resize, hide, shrink, or enlarge, a website, to make it look 
+good on all devices (desktops, tablets, and phones):
+
+Notice that in the example above, the image can be scaled up to be larger than its original size.
+A better solution, in many cases, will be to use the max-width property instead.
+If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size
+-->
